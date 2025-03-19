@@ -24,7 +24,7 @@ stage('push to hub') {
             steps {
                script{
                  withDockerRegistry(credentialsId: 'arun', url: 'https://index.docker.io/v1/') {
-                  bat 'docker push arunesh2005/simpleapplication'
+                  sh 'docker push arunesh2005/simpleapplication'
                }
             }
             }
