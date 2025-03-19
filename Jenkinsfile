@@ -23,7 +23,7 @@ stage('build to images') {
 stage('push to hub') {
             steps {
                script{
-                 withDockerRegistry(credentialsId: 'Docker_cred', url: 'https://index.docker.io/v1/') {
+                 withDockerRegistry(credentialsId: 'arun', url: 'https://index.docker.io/v1/') {
                   bat 'docker push arunesh2005/simpleapplication'
                }
             }
