@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    image: arunesh2005/simpleapplication
+    ports:
+      - 80:80
+
+  db:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=secret
